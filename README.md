@@ -15,11 +15,14 @@ use DareboostPHP\DareboostAPI;
 use DareboostPHP\DareboostCustomAPI;
 
 $api = new DareboostCustomAPI(config("app.DAREBOOST_KEY"));
+
 //Launch Analysis<br/>
+
 $params = array("url"=>"https://www.gameandme.fr");
+
 $json = $api->analysisLaunch($params);
+
 //Get a result from a url
-$api = new DareboostCustomAPI(config("app.DAREBOOST_KEY"));
 $tab = $api->getAnalysisReportForUrl("https://www.gameandme.fr");
 
 Take care with this error:
