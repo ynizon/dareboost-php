@@ -49,12 +49,13 @@ class DareboostBase
 	/**
 	 * Fill token if you have one
 	 * @param string $token
-	 * @param int $timeout
 	 */
-	public function __construct($token, $timeout = 30)
+	public function __construct($token = "")
 	{
 		$this->access_token = $token;
-		
+		if ($token == ""){
+			die('You need a token for DareBoost API -> config(app.DAREBOOST_KEY)');
+		}
 	}
 
 	/**
