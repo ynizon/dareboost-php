@@ -17,10 +17,13 @@ use DareboostPHP\DareboostAPI;<br/>
 use DareboostPHP\DareboostCustomAPI;<br/>
 <br/>
 $api = new DareboostCustomAPI(config("app.DAREBOOST_KEY"));
-
 //Launch Analysis<br/>
 $params = array("url"=>"https://www.gameandme.fr");
 $json = $api->analysisLaunch($params);<br/>
+
+//Get a result from a url
+$api = new DareboostCustomAPI(config("app.DAREBOOST_KEY"));
+$tab = $api->getAnalysisReportForUrl("https://www.gameandme.fr");
 <br/>
 Take care with this error:
 Too many simultaneous analysis. You have reached the maximum number of simultaneous analysis for your profile. You can upgrade your offer or wait until the current analysis is completed.
