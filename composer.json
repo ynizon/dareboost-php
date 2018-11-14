@@ -13,9 +13,6 @@
             "DareboostPHP\\": "src"
         }
     },
-	"require": {
-        "kunststube/rison": ">0.10"
-    }, 
     "prefer-stable": true
 
 }
