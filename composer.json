@@ -1,0 +1,21 @@
+{
+    "name": "ynizon/dareboost-php",
+    "description": "Dareboost PHP Toolkit",
+    "license": "MIT",
+    "authors": [
+		{
+            "name": "Yohann Nizon",
+            "email": "ynizon@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DareboostPHP\\": "src"
+        }
+    },
+	"require": {
+        "kunststube/rison": ">0.10"
+    }, 
+    "prefer-stable": true
+
+}
