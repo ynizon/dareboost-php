@@ -31,7 +31,7 @@ class DareboostCustomAPI extends DareboostAPI
 			do{
 				sleep(15);
 				$tab = $this->getAnalysisReport($params);
-				echo var_dump($tab);
+				//echo var_dump($tab);
 				$iRetry++;
 				if ($tab["status"] == 200){
 					return $tab["report"];
